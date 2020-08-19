@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Products</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <head>
+  <body>
+    <!-- navbar -->
+      <nav> 
+        <div class="logo">
+          <h3><a href="Fashion.html" class="logo-name">
+            Fashion</a></h3>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="contact.html">ContactUs</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <!-- navbar -->
+      <h2 class="main-head-of-products">Everyone Has A Style Statment<br>
+        <span class="colored-word-bigger-size">FIND YOURS HERE!</span>
+      </h2>
+
+      <br>
+      <div class="bg-images">
+        <a href="products.html"><img src="images/products-img/marcus-loke-xXJ6utyoSw0-unsplash (1).jpg" alt=""></a>
+      </div>
+
+      <center><p class="msg-ps">
+        <span class="colored-word">Click</span> on the product to add in your shopping list.
+        <br>Go below and check <span class="colored-word">YOUR CART</span> for details.
+      </p></center>
+
+      <div>
+        <h1>For <span class="colored-word">Her</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="kurti">
+          <img src="images/products-img/women/dress.jpg" id="AKS  Kurta with Plazzzo & Dupatta || 8.4$" data-name="Kurta with Plazzzo & Dupatta" data-price="8.4" data-id="0" onclick="add(this.id)">
+        
+          <img src="images/products-img/women/dress2.jpg" id="Nayo Women Solid Kurta with Trouser || 8.9$ "  data-name="Nayo Women Solid Kurta with Trouser" data-price="8.9" data-id="1"alt="" onclick="add(this.id)">
+        
+        </div> 
+        <div class="western">
+          <img src="images/products-img/women/shirt.jpg"  id="Ives Solid Shirt Style Top || 5.5$ "  data-name="Ives Solid Shirt Style Top" data-price="5.5" data-id="2"alt="" onclick="add(this.id)">
+
+          <img src="images/products-img/women/shirt2.jpg"  id="Style Quotient Solid Top || 5.8$ " data-name="Style Quotient Solid Top" data-price="5.8" data-id="3"alt="" onclick="add(this.id)">
+        
+        </div>
+        <div class="g-shoes">
+          <img src="images/products-img/women/shoe1.jpg"  id=" PUMA Women LQDCell || 9.5$" data-name="PUMA Women LQDCell" data-price="9.5" data-id="4"alt="" onclick="add(this.id)">
+
+          <img src="images/products-img/women/shoe8.jpg"  id="ADIDAS Women Ultraboost19 Running || 6.9$ " data-name="ADIDAS Women Ultraboost19 Running" data-price="6.9" data-id="5"alt="" onclick="add(this.id)">
+          
+        </div>
+       
+
+        <h1>For <span class="colored-word">Him</span></h1>
+        <center><hr class="products-hr"></center>
+        <br><br>
+
+        <div class="shirts">
+          <img src="images/products-img/men/shirt1.jpg"  id="Difference of Opinion Printed Shirt || 6.4$ "data-name="Difference of Opinion Printed Shirt" data-price="6.4" data-id="6" alt="" onclick="add(this.id)">
+
+          <img src="images/products-img/men/shirt2.jpg"  id="Moda Rapido Printed Round Neck T-shirt || 6.9$ "data-name="Moda Rapido Printed Round Neck T-shirt" data-price="6.9" data-id="7" alt="" onclick="add(this.id)">
+       
+        </div>
+        <div class="jeans">
+          <img src="images/products-img/men/jeans1.jpg"  id="HIGHLANDER Men Slim Fit Jeans || 9.6$"data-name="HIGHLANDER Men Slim Fit Jeans" data-price="9.6" data-id="8" alt="" onclick="add(this.id)">
+
+          <img src="images/products-img/men/jeans2.jpg"  id="Roadster Men Super Skinny Fit Jeans || 9.2$" data-name="Roadster Men Super Skinny Fit Jeans" data-price="9.2" data-id="9"alt="" onclick="add(this.id)">
+         
+        </div>
+       
+        <div class="shoes">
+          <img src="images/products-img/men/shoe1.jpg"  id="PUMA Men Clasp IDP Sneakers || 8.7$" data-name="PUMA Men Clasp IDP Sneakers" data-price="8.7" data-id="10"alt=""  onclick="add(this.id)">
+
+          <img src="images/products-img/men/shoe2.jpg"  id="Levis Men Sneakers || 10.5$ " data-name="Levis Men Sneakers" data-price="10.5$" data-id="11"alt="" onclick="add(this.id)">
+          
+        </div><br>
+
+        <h4 class="sry-msg">Uh-Oh! We are<span class="colored-word"> done</span>🛒</h4>
+        <center><hr class="last-hr-of-product"></center>
+        <br><br>
+
+        <div class="cart-details">
+          <h2 class="head-of-cart">Your Cart</h2>
+            <hr class="hr-of-cart-head">
+            <br>
+          <ul id="ul_pr">
+            
+          </ul>
+          Total price: <strong id="totalPrice">0 $</strong>
+        <button class="btn-clear-list" onclick="emptyList()"> <span class="colored-word"> Clear My List</span></button> <br>
+          <small>Can't see anything? Click & add your favorite fashion in
+          <span class="colored-word"> Shopping List!</span> </small>
+        </div>
+        <br><br><br>
+      </div>
+      
+    <script src="nav.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
